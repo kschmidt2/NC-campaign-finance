@@ -67,21 +67,6 @@ function buildChart(chartCandidate) {
     y.domain(data.map(function(d) { return d.city; }));
     x.domain([0, 140000]).nice();
 
-    var tip = d3.tip()
-        .attr('class', 'd3-tip')
-        .offset(function() {
-          if (chartCandidate == 'mccrory') {
-            return [20,0]
-          } else {
-            return [120,0]
-          }
-        })
-        .html(function(d) {
-          return "City: " + d.city + "</br>Amount: " + d.amount.toLocaleString();
-        })
-
-    svg.call(tip);
-
 
     var g = svg.append("g")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
