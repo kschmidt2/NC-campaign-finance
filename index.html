@@ -1,0 +1,70 @@
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Outside Contributions</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- d3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="js/datamaps.usa.min.js"></script>
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <header class="row">
+        <div class="col-xs-12 col-sm-12">
+          <h1>Outside influence</h1>
+          <p>North Carolina Governor Pat McCrory and challenger Roy Cooper are locked in a tight race for the governor's mansion heading into Tuesday's election. Both racked up millions in donations from July through October as the race headed down to the wire. With the race receiving national attention in light of the media coverage of HB2, donors in other states have contributed to both campaigns. These donations made up about 10 percent of the total given to McCrory and Cooper. Where are these donations coming from? Use the charts below to view the top states and cities that donated to both campaigns in the final months leading up to the election.
+        </div>
+      </header>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="map-info">
+            <h2>Campaign contributions by state</h2>
+            <p><b>N.C. total:</b> $12,648,876.22 |
+            <b>N.C. McCrory:</b> $4,564,424.22 |
+            <b>N.C. Cooper:</b> $8,084,452</p>
+          </div>
+          <div class="buttons">
+            <button class="states active" id="total">Total</button>
+            <button class="states" id="mccrory">McCrory</button>
+            <button class="states" id="cooper">Cooper</button>
+          </div>
+          <div class="map"></div>
+        </div>
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div id="#tooltip"></div>
+              <h2>Top cities that donated to McCrory</h2>
+              <div id="mccrory-chart"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <h2>Top cities that donated to Cooper</h2>
+              <div id="cooper-chart"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="js/maps.js"></script>
+    <script src="js/charts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #1f3f48;
+}
+
+b {
+  font-weight: 700;
+}
+
+header {
+  margin: 2rem 0;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.map-info {
+  float: left;
+}
+
+.map-info p {
+  font-size: 1rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: right;
+}
+
+button {
+  border: 0;
+  width: 75px;
+  margin: 0 .2rem;
+}
+
+button#total {
+  background: #1f3f48;
+}
+
+button#mccrory {
+  background: #c73838;
+}
+
+button#cooper {
+  background: #4e5394;
+}
+
+#total.active {
+  background: white;
+  color: #1f3f48;
+  border: 1px solid #1f3f48;
+}
+
+#mccrory.active {
+  background: white;
+  color: #c73838;
+  border: 1px solid #c73838;
+}
+
+#cooper.active {
+  background: white;
+  color: #4e5394;
+  border: 1px solid #4e5394;
+}
+
+/*#mccrory-chart {
+  margin-bottom: 600px;
+}*/
+
+.axis path {
+  display: none;
+}
+
+.tick line {
+  stroke-width: 1px;
+  stroke: #1f3f48;
+  stroke-opacity: 0.3;
+}
+
+.cooper-bar {
+  fill: #4e5394;
+}
+
+.mccrory-bar {
+  fill: #c73838;
+}
+
+#usmap {
+	display: inline-block;
+	position: relative;
+	width: 124%;
+  margin-left: -12%;
+	vertical-align: middle;
+	overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+/*styles to make the svg responsive*/
+.svg-content-responsive {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.svg-container-line {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 90%; /* aspect ratio */
+  vertical-align: top;
+  overflow: hidden;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media (max-width: 640px) {
+  .map-info {
+    float: none;
+  }
+  .buttons {
+    text-align: left;
+  }
+}
