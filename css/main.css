@@ -22,7 +22,7 @@ header p {
   font-weight: 300;
 }
 
-.byline {
+p.byline {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1rem;
@@ -84,10 +84,6 @@ button#cooper {
   color: #4e5394;
   border: 1px solid #4e5394;
 }
-
-/*#mccrory-chart {
-  margin-bottom: 600px;
-}*/
 
 .axis path {
   display: none;
