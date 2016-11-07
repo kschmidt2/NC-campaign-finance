@@ -99,10 +99,12 @@ function buildChart(chartCandidate) {
           .style("font-size","1.5em")
           .text(d.city + " $" + d.amount.toLocaleString())
           .style("text-anchor", "end");
+      $(this).addClass("chart-hover");
     }
 
     function hoverOut() {
       hoverbox.select("text").remove();
+      $(this).removeClass("chart-hover");
     }
 
 
@@ -116,11 +118,6 @@ function buildChart(chartCandidate) {
         .attr("width", function(d) { return x(d.amount); })
         .on('mouseover', hoverBar)
         .on('mouseout', hoverOut);
-
-
-
-
-
 
 
       $('#mccrory-chart').css('height', height-80+'px');

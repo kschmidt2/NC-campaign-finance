@@ -112,6 +112,10 @@ button#cooper {
   margin-bottom: 2rem;
 }
 
+.chart-hover {
+  fill: #1f3f48;
+}
+
 /*styles to make the svg responsive*/
 .svg-content-responsive {
   display: inline-block;
